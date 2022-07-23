@@ -55,7 +55,7 @@ console.log(typeof c);
 
 let name1 = prompt('Ім`я');
 let surname = prompt('По батькові');
-let age = prompt('вік');
+let age = +prompt('вік');
 
 let persona = `hello ${name1} ${surname}. You have ${age} years old`;
 console.log(persona)
