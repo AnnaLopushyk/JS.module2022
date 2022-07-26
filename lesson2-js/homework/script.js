@@ -15,7 +15,6 @@ console.log(array[6]);
 console.log(array[7]);
 console.log(array[8]);
 console.log(array[9]);
-console.log(array[10]);
 
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
