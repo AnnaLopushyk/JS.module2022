@@ -1,0 +1,13 @@
+
+.product-card {
+    width: 400px;
+}
+
+.product-image {
+    width: 250px;
+    height: 300px;
+}
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+}

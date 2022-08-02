@@ -92,9 +92,6 @@
 //     Напишіть код який, за допомоги  оператора || буде присвоювати змінній х значення "default"
 //     якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
 
-let x = null;
-if ( false  || !x ){
-    console.log('default')
-} else {
-    console.log('true')
-}
+let x = null || 'default';
+console.log(x)
+
