@@ -2,10 +2,11 @@ let a = 100;
 let b = 500;
 let c = "hello";
 let d = "okten";
-const x = 'constant value';
+
+console.log(a);
 {
-    console.log(a);
-   let x = 'new value';
+    let x = 'constant value';
+    x = 'new value';
 }
  let y = ' new value';
 
