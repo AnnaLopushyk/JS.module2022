@@ -140,6 +140,8 @@ let found = cards.find(element=>{
 })
 console.log(found)
 
+
+
 // - всі шістки
 
 let every = cards.filter(element => element.value === 6);
