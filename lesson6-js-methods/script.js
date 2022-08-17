@@ -156,7 +156,8 @@ let isDiamonds = cards.filter(value => value.cardSuit === 'diamonds');
 console.log(isDiamonds)
 
 // - всі трефи від 9 та більше
-let isClubs = cards.filter(value => value.cardSuit === 'clubs' && value.value >=9 );
+let isClubs = cards.filter(value => value.cardSuit === 'clubs');
+
 console.log(isClubs)
 
 
@@ -193,3 +194,7 @@ let reduce = cards.reduce((accumulator, card) =>{
 }
 )
 console.log(reduce)
+
+
+//
+// item.cardSuit === 'clubs' && !(item.value < 9)
