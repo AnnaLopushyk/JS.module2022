@@ -143,13 +143,13 @@ for (const property of simpsons) {
 
     let nameDiv = document.createElement('div')
     // nameDiv.classList.add('member')
-    nameDiv.innerHTML = ` <strong>${property.name}_ </strong>`;
+    nameDiv.innerHTML = `Name: <strong>${property.name}</strong>`;
 
     let surnameDiv = document.createElement('div');
-    surnameDiv.innerHTML = `<strong>${property.surname} </strong>  `;
+    surnameDiv.innerHTML = `Surname: <strong>${property.surname}</strong>`;
 
     let ageDiv = document.createElement('div');
-    ageDiv.innerText = `-Age: ${property.age}`;
+    ageDiv.innerText = `Age: ${property.age}`;
 
     let infoDiv = document.createElement('div');
     infoDiv.classList.add('infoSimpsons');

@@ -8,17 +8,16 @@
 }
 .member {
     margin: 20px 10px 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 
 }
 
 .infoSimpsons {
     text-align: justify;
     font-size: 16px;
-
+}
+.photo {
+    width: 180px;
+    height: 300px;
 }
 .wrapp {
     width: 600px;
