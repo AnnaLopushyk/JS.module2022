@@ -1,0 +1,8 @@
+/*додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту*/
+
+.wrap {
+    background: cornflowerblue;
+    font-size: 25px;
+    color: lightgreen;
+
+}
