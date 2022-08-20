@@ -6,3 +6,47 @@
     color: lightgreen;
 
 }
+.member {
+    margin: 20px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.infoSimpsons {
+    text-align: justify;
+    font-size: 16px;
+
+}
+.wrapp {
+    width: 600px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.title {
+    background: lightcyan;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.duration {
+    display: flex;
+    gap: 50px;
+  justify-content: center;
+    align-items: center;
+    background: lightblue;
+
+}
+.monthDuration .hourDuration {
+    width: 48%;
+    text-align: center;
+
+}
+.main {
+    background: lavender;
+
+}

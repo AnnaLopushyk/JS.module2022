@@ -52,11 +52,11 @@ let coursesAndDurationArray = [
 // Завдання робити через цикли.
 for (let value of coursesAndDurationArray) {
     let divElement = document.createElement('div');
-    let text='';
-    for(let key in value){
-        text +=` ${key}: ${value[key]}; `
+    let text = '';
+    for (let key in value) {
+        text += ` ${key}: ${value[key]}; `
     }
-    divElement.innerText=text;
+    divElement.innerText = text;
     document.body.appendChild(divElement)
 }
 
@@ -77,16 +77,16 @@ for (let value of coursesAndDurationArray) {
 //     Завдання робити через цикли.
 //
 
-for (key of coursesAndDurationArray){
+for (key of coursesAndDurationArray) {
     let div2 = document.createElement('div');
     div2.classList.add('item');
     let h1 = document.createElement('h1');
     h1.classList.add('heading');
-    h1.innerText=key.title
+    h1.innerText = key.title
     let p = document.createElement('p');
     p.classList.add('description');
-    p.innerText=key.monthDuration;
-    div2.append(h1,p);
+    p.innerText = key.monthDuration;
+    div2.append(h1, p);
     document.body.appendChild(div2)
 
 }
@@ -135,31 +135,32 @@ let simpsons = [
 // Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 
 
-let usedDiv = document.createElement('div');
+// let usedDiv = document.createElement('div');
 for (const property of simpsons) {
     let div = document.createElement('div');
     div.classList.add('member');
 
 
-
     let nameDiv = document.createElement('div')
     // nameDiv.classList.add('member')
-    nameDiv.innerHTML = `Name: <strong>${property.name}</strong>`;
+    nameDiv.innerHTML = ` <strong>${property.name}_ </strong>`;
 
     let surnameDiv = document.createElement('div');
-    surnameDiv.innerHTML = `Surname: <strong>${property.surname}</strong>`;
+    surnameDiv.innerHTML = `<strong>${property.surname} </strong>  `;
 
     let ageDiv = document.createElement('div');
-    ageDiv.innerText = `Age: ${property.age}`;
+    ageDiv.innerText = `-Age: ${property.age}`;
 
     let infoDiv = document.createElement('div');
+    infoDiv.classList.add('infoSimpsons');
     infoDiv.innerText = property.info;
 
     let photoDiv = document.createElement('img');
+    photoDiv.classList.add('photo');
     photoDiv.src = property.photo
 
 
-    div.append(nameDiv, surnameDiv,ageDiv,infoDiv, photoDiv);
+    div.append(nameDiv, surnameDiv, ageDiv, infoDiv, photoDiv);
     document.body.appendChild(div)
 }
 
@@ -237,4 +238,45 @@ let coursesArray = [
 // Створити для кожного елементу масиву свій блок, блок розділити блоками,
 // в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
+
+const container = document.createElement('div')
+container.classList.add('wrapp');
+
+for (const containerElement of coursesArray) {
+
+    let titleDiv = document.createElement('div');
+    titleDiv.classList.add('title');
+    titleDiv.innerText = containerElement.title
+
+    let durationDiv = document.createElement('div');
+    durationDiv.classList.add('duration');
+
+    let monthDurationDiv = document.createElement('div');
+    monthDurationDiv.classList.add('monthDuration');
+    monthDurationDiv.innerText = `monthDuration:   ${containerElement.monthDuration}`
+
+    let hourDurationDiv = document.createElement('div');
+    hourDurationDiv.classList.add('hourDuration');
+    hourDurationDiv.innerText = `hourDuration:   ${containerElement.hourDuration}`;
+
+    durationDiv.append(monthDurationDiv, hourDurationDiv);
+
+
+    let mainDiv = document.createElement('ul');
+    mainDiv.classList.add('main');
+    mainDiv.innerHTML ='<strong> models:</strong> ';
+
+    for (let key of containerElement.modules ){
+        let list = document.createElement('li');
+        list.classList.add('list');
+        list.innerText = key;
+
+        mainDiv.appendChild(list)
+
+    container.append(titleDiv, durationDiv,mainDiv);
+
+    document.body.appendChild(container)
+}
+}
+
 
