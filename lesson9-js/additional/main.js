@@ -106,7 +106,8 @@ for (let item of users) {
     statusDiv.innerText = `${item.status}`;
 
     let addresaDiv = document.createElement('div');
-    addresaDiv.innerHTML = `address`;
+    addresaDiv.innerText = `address`;
+
 
     userDiv.append(nameDiv, ageDiv, statusDiv, addresaDiv);
     document.body.appendChild(userDiv)
