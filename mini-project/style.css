@@ -1,0 +1,154 @@
+/*// Стилизація проєкта -*/
+/*// index.html - всі блоки з user - по 2 в рядок.
+кнопки/аосилвння розташувати під інформацією про user.*/
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.user{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background: lightcyan;
+    padding: 5px;
+    font-size: 14px;
+}
+.linkDetails {
+    text-decoration: none;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.linkDetails:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+/*//     user-details.html - блок з інфою про user зверху сторінки.
+Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*//     блоки з короткою іфною про post - в ряд по 5 .*/
+
+.userInfo {
+    background: thistle;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.address, .companyStyle {
+    margin-left: 20px;
+    background: lightcyan;
+}
+.btnDiv {
+    align-items: center;
+}
+
+.btnPostOfUser {
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: lightyellow;
+    font-size: 15px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 10px;
+}
+.btnPostOfUser:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+    border: 1px solid black;
+
+}
+
+.titlePost {
+    background-color: lightgrey;
+display: flex;
+    width: 17%;
+    border: 1px solid black;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.linkDiv {
+    text-align: center;
+}
+
+.postStyle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;}
+.btnDiv {
+    text-align: center;
+}
+
+.btnPost {
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    background: lemonchiffon;
+    font-size: 15px;
+    border: 1px solid black;
+    height: 30px;
+}
+.btnPost:hover {
+    cursor: pointer;
+    background-color: lightsalmon;
+    border: 1px solid black;
+
+
+}
+.postDetail {
+    font-size: 14px;
+    font-style: oblique;
+    text-decoration: none;
+    width: 100%;
+
+}
+.postDetail:hover {
+    cursor: pointer;
+    background-color: cyan;
+
+}
+
+/*//     post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.*/
+/*//     Всі елементи котрі характеризують users, posts, comments візуалізувати, так,
+ щоб було видно що це блоки (дати фон. марджини і тд)*/
+.allPostInfo {
+    background: lightcoral;
+    padding: 10px;
+}
+
+
+.commentStyle {
+    background: lavenderblush;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commentStyle {
+   margin: 15px 0;
+    width: 22%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.comments {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.commentButtonDiv {
+ border-radius: 5px;
+}
+
+.divPostElement {
+    background: aqua;
+}
